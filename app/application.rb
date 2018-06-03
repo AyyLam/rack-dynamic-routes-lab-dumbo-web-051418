@@ -10,3 +10,8 @@ class Application
         resp.write item_req.price 
       else 
         resp.status = 400 
+    else
+      resp.status = 404
+    end 
+  end 
+end 
