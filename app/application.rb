@@ -7,6 +7,6 @@ class Application
     if req.path.match(/items/) 
       item_req = req.path.split("/items/").last 
       if @@items.find(|i| i.title == item_req) 
-        return item_req.price 
+        resp.write item_req.price 
       else 
         return "400"
