@@ -12,6 +12,8 @@ class Application
         resp.status = 400 
     else
       resp.status = 404
-    end 
+    end
+    
+    resp.finish 
   end 
 end 
