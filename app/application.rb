@@ -9,7 +9,8 @@ class Application
       if @@items.find{|i| i.title == item_req} 
         resp.write item_req.price 
       else 
-        resp.status = 400 
+        resp.status = 400
+      end
     else
       resp.status = 404
     end
